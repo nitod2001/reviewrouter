@@ -18,7 +18,7 @@ const Panner = (props) => {
         <h1>{props.name}</h1>
         <p>{props.content}</p>
         <div className="panner-btn-wrap">
-          <Link to="/" className="panner-btn">
+          <Link to="/football" className="panner-btn">
             {" "}
             Back{" "}
           </Link>

@@ -11,8 +11,14 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/football" element={<Home></Home>}></Route>
-        <Route path="/Page1" element={<Page1 name="messi"></Page1>}></Route>
-        <Route path="/Page2" element={<Page2 name="ronaldo"></Page2>}></Route>
+        <Route
+          path="/football/Page1"
+          element={<Page1 name="messi"></Page1>}
+        ></Route>
+        <Route
+          path="/football/Page2"
+          element={<Page2 name="ronaldo"></Page2>}
+        ></Route>
       </Routes>
       {/* <Page2></Page2> */}
     </div>
