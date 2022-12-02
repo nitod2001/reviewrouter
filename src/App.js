@@ -8,17 +8,18 @@ import Page2 from "./component/Page2";
 
 function App() {
   const location = useLocation();
-  const changePath = () => {
-    if (location.pathname === "/") {
-      location.pathname = "/football";
-    } else location.pathname = "/football";
-    return location.pathname;
-  };
-  console.log(location);
+
   return (
     <div className="App">
       <Routes>
-        <Route path={changePath()} element={<Home></Home>}></Route>
+        <Route
+          path={
+            location.pathname === "/"
+              ? (location.pathname = "/football")
+              : "/football"
+          }
+          element={<Home></Home>}
+        ></Route>
         <Route
           path="/football/Page1"
           element={<Page1 name="messi"></Page1>}
