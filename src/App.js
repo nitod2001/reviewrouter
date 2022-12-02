@@ -8,13 +8,13 @@ import Page2 from "./component/Page2";
 
 function App() {
   const location = useLocation();
-  console.log(location);
   const changePath = () => {
     if (location.pathname === "/") {
       location.pathname = "/football";
     } else location.pathname = "/football";
     return location.pathname;
   };
+  console.log(location);
   return (
     <div className="App">
       <Routes>
@@ -28,7 +28,6 @@ function App() {
           element={<Page2 name="ronaldo"></Page2>}
         ></Route>
       </Routes>
-      {/* <Page2></Page2> */}
     </div>
   );
 }
